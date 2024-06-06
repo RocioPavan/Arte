@@ -10,13 +10,15 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
-    width: 340px;
+    width: 80%;
+    max-width: 800px;
 }
 
 .gallery img {
-    width: 100px;
-    height: 100px;
+    width: calc(33.33% - 20px);
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
